@@ -3,7 +3,7 @@ import csv
 
 #variables, lists, dictionaries, strings, etc
 totalVotes = 0
-candidateOptions = []
+candidateChoices = []
 candidateVotes = {}
 winningCandidate = ""
 winningCount = 0
@@ -24,9 +24,9 @@ with open('election_data.csv', newline='') as electionData:
 
         candidateName = i[2]
 
-        if candidateName not in candidateOptions:
+        if candidateName not in candidateChoices:
 
-            candidateOptions.append(candidateName)
+            candidateChoices.append(candidateName)
 
             candidateVotes[candidateName] = 0
 
