@@ -5,9 +5,9 @@ import csv
 totalVotes = 0
 candidateChoices = []
 candidateVotes = {}
-winningCandidate = ""
-winningCount = 0
-winningPercentage = 0
+winCandidate = ""
+winNumber = 0
+winPercentage = 0
 
 #open and read csv file
 with open('election_data.csv', newline='') as electionData:
@@ -54,15 +54,15 @@ with open('readme.txt', 'w') as f:
 #printing the perecentage
         print(candidateResults)
         f.write(candidateResults)
-        if (votes > winningCount) and (votePercentage > winningPercentage):
+        if (votes > winNumber) and (votePercentage > winPercentage):
 
-            winningCount = votes
-            winningPercentage = votePercentage
+            winNumber = votes
+            winPercentage = votePercentage
 
-            winningCandidate = candidateName
+            winCandidate = candidateName
 #prepping winning candidate data to be printed
     summary = (
-        f"Winner: {winningCandidate}\n")
+        f"Winner: {winCandidate}\n")
     #print to terminal for winning candidate result
     print(summary)
     f.write(summary)
