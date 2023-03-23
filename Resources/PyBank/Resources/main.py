@@ -70,14 +70,6 @@ def convertMin(csvData):
 splitMax = convert(csvData).split(" ")[0]
 splitMin = convertMin(csvData).split(" ")[0]
 
-#print commands
-# print(f'Total number of months: {len(months)}')
-# print(f'Net profit/loss changes: ${sum(profitLoss)}')
-# # Printing average of the list
-# print("Average changes in profit/loss=", round(average, 2))
-# print(f'Greatest Increase in Profits: {splitMax} ({maxValue})')
-# print(f'Greatest Decrease in Profits: {splitMin} ({minValue})')
-
 #prepping the data to be printed
 report = (f"\
 Total number of months: {len(months)}\n\
